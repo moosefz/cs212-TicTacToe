@@ -20,3 +20,14 @@ This Tic Tac Toe game with "*dumb*" AI was created during the F2019 semester at 
  - HumanPlayer: A class for the HumanPlayer object with attributes related to the player.
  - Player: Abstract class that is inherited by the HumanPlayer/AI Player consisting of the attributes and methods required. 
  - TicTacToe.java: Consists of main and creates a new game once executed.
+ 
+ ## Selections
+ 
+ Users begin the game by selecting the game mode from the console:
+ 1. Human vs Human
+ 2. Human vs AI (Novice)
+ 
+ Depending on the game mode, the console will request the users to input a name for each player. Once complete, a random *coin toss* occurs for the first move. Based on this, users can select the block they want to make a move in (1-9). 
+ - If occupied, they are notified and asked to make another move. 
+ - If successful, the board is updated, the state is checked (winner?), and the next user is prompted to make a turn.
+ - If a winner/draw is present, the game is complete with a winner being announced to the console.
